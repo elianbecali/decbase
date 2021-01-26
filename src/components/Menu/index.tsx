@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { MdMenu } from 'react-icons/md';
 
 import { Header, Nav } from './styles';
 
@@ -18,10 +19,13 @@ function Menu() {
           <a href="#">Contact</a>
           <a href="#">Sign up</a>
         </div>
+        <div className="menu">
+          <MdMenu size={28} />
+        </div>
       </Nav>
 
       <Header>
-        <div>
+        <div className="content">
           <h1>Modern Interior</h1>
           <h2>Create Your Interior Design.</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -34,8 +38,7 @@ function Menu() {
           <Image
             src="/images/toa-heftiba.png"
             alt="Interior design at home"
-            width="717"
-            height="626"
+            layout="fill"
           />
         </div>
       </Header>

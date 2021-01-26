@@ -6,6 +6,9 @@ export const Nav = styled.nav`
   justify-content: space-between;
 
   padding: 1rem 16rem;
+  @media (max-width: 1830px) {
+    padding: 1rem 6rem;
+  }
 
   div a {
     font-size: 1rem;
@@ -30,6 +33,10 @@ export const Nav = styled.nav`
       }
     }
   }
+
+  div.menu {
+    display: none;
+  }
 `;
 
 export const Header = styled.header`
@@ -37,8 +44,13 @@ export const Header = styled.header`
   justify-content: space-between;
   padding: 6.688rem 16rem;
 
-  div {
-    max-width: 600px;
+  @media (max-width: 1830px) {
+    padding: 5rem 6rem;
+  }
+
+  div.content {
+    max-width: 620px;
+    padding: 5rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -83,10 +95,14 @@ export const Header = styled.header`
   }
 
   div + div {
+    width: 100%;
     max-width: 750px;
     position: relative;
 
     img {
+      width: 100%;
+      max-height: 626px;
+      max-width: 717px;
       border-radius: 8.75rem 0;
     }
 
@@ -94,10 +110,13 @@ export const Header = styled.header`
     &::after {
       position: absolute;
       content: '';
-      top: 2.063rem;
-      left: 2.188rem;
+      top: 7.7%;
+      left: 8%;
       width: 717px;
-      height: 626px;
+      height: 99%;
+      width: 100%;
+      max-height: 626px;
+      max-width: 717px;
       border: 2px solid var(--limed-oak);
       border-radius: 8.75rem 0;
       z-index: -1;
