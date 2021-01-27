@@ -9,6 +9,9 @@ export const Nav = styled.nav`
   @media (max-width: 1830px) {
     padding: 1rem 6rem;
   }
+  @media (max-width: 1430px) {
+    padding: 1rem 2.5rem;
+  }
 
   div a {
     font-size: 1rem;
@@ -46,6 +49,17 @@ export const Header = styled.header`
 
   @media (max-width: 1830px) {
     padding: 5rem 6rem;
+  }
+  @media (max-width: 1430px) {
+    padding: 2.5rem;
+
+    div.content {
+      max-width: 570px;
+    }
+
+    div + div:after {
+      display: none;
+    }
   }
 
   div.content {
@@ -112,7 +126,6 @@ export const Header = styled.header`
       content: '';
       top: 7.7%;
       left: 8%;
-      width: 717px;
       height: 99%;
       width: 100%;
       max-height: 626px;
