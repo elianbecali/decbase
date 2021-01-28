@@ -1,7 +1,7 @@
 import Head from 'next/head';
-import Menu from "../components/Menu";
+import Home from './Home';
 
-export default function Home() {
+export default function App() {
   return (
     <>
       <Head >
@@ -14,7 +14,7 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet" />
       </Head>
 
-      <Menu />
+      <Home />
     </>
   );
 }
