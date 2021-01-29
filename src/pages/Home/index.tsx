@@ -1,10 +1,12 @@
 import Image from 'next/image';
-import { MdCloud, MdPalette } from 'react-icons/md';
-import Article from '../../components/CardService';
+import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from 'react-icons/md';
+import { BsCardChecklist, BsHouseDoor } from 'react-icons/bs';
+import { AiOutlineHome } from 'react-icons/ai';
+import CardService from '../../components/CardService';
 
 import Menu from  '../../components/Menu';
 
-import { HeaderPage } from './styles';
+import { HeaderPage, SectionService } from './styles';
 
 function Home() {
   return (
@@ -30,25 +32,46 @@ function Home() {
         </div>
       </HeaderPage>
 
-      <section>
+      <SectionService>
         <div>
           <h2>What we do <span>Our Service</span></h2>
 
-          <div>
-            ? ?
+          <div className="icons">
+            <span>
+              <MdKeyboardArrowLeft size={20} color="#646464" />
+            </span>
+            <span className="marker">
+              <MdKeyboardArrowRight size={20} color="#FFF" />
+            </span>
           </div>
         </div>
         <div>
-          <Article
-            title="Interior Design"
+          <CardService
+              title="Interior Design"
+              description="Lorem ipsum dolor amet consectetur
+              adipiscing elit sed eiusmod tempor
+              incididunt ut labore."
+              Icon={BsHouseDoor}
+              isHighlight={false}
+            />
+          <CardService
+            title="Architecture"
             description="Lorem ipsum dolor amet consectetur
             adipiscing elit sed eiusmod tempor
             incididunt ut labore."
-            Icon={MdCloud}
-            highlight={false}
+            Icon={AiOutlineHome}
+            isHighlight={true}
+          />
+          <CardService
+            title="Planning"
+            description="Lorem ipsum dolor amet consectetur
+            adipiscing elit sed eiusmod tempor
+            incididunt ut labore."
+            Icon={BsCardChecklist}
+            isHighlight={false}
           />
         </div>
-      </section>
+      </SectionService>
     </>
   );
 }

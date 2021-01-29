@@ -6,17 +6,19 @@ interface CardServiceProps {
   title: String;
   description: String;
   Icon: IconType;
-  highlight: Boolean;
+  isHighlight: Boolean;
 }
 
-function CardService({ title, description, Icon, highlight }: CardServiceProps) {
+function CardService({ title, description, Icon, isHighlight }: CardServiceProps) {
   return (
-    <Article highlight={highlight}>
+    <Article isHighlight={isHighlight}>
       <div>
-        <Icon color="#000"/>
+        <Icon color={isHighlight ? '#FFF' : '#000'} size={40}/>
       </div>
-      <h3>{title}</h3>
-      <p>{description}</p>
+      <div>
+        <h3>{title}</h3>
+        <p>{description}</p>
+      </div>
     </Article>
   );
 }
