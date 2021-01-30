@@ -49,21 +49,6 @@ export const HeaderPage = styled.header`
       line-height: 1.8rem;
       color: var(--dove-gray);
     }
-
-    a {
-      font-weight: 700;
-      font-size: 1.125rem;
-      text-align: center;
-      text-transform: uppercase;
-      margin-top: 2.8rem;
-
-      max-width: 140px;
-      padding: 0.8rem 1.75rem;
-      border: none;
-      border-radius: 1.25rem 0;
-      color: var(--white);
-      background-color: var(--viridian);
-    }
   }
 
   div + div {
@@ -93,6 +78,21 @@ export const HeaderPage = styled.header`
       z-index: -1;
     }
   }
+`;
+
+export const ButtonCall = styled.a`
+  font-weight: 700;
+  font-size: 1.125rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 2.8rem;
+
+  max-width: 140px;
+  padding: 0.8rem 1.75rem;
+  border: none;
+  border-radius: 1.25rem 0;
+  color: var(--white);
+  background-color: var(--viridian);
 `;
 
 export const SectionService = styled.section`
@@ -171,4 +171,8 @@ export const SectionService = styled.section`
     }
   }
 
+`;
+
+export const SectionAboutUs = styled.section`
+  padding: 6.688rem 16rem;
 `;

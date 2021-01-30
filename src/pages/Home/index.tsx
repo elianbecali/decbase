@@ -6,7 +6,7 @@ import CardService from '../../components/CardService';
 
 import Menu from  '../../components/Menu';
 
-import { HeaderPage, SectionService } from './styles';
+import { ButtonCall, HeaderPage, SectionAboutUs, SectionService } from './styles';
 
 function Home() {
   return (
@@ -21,7 +21,9 @@ function Home() {
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
             veniam, quis nostrud exercitation.
           </p>
-          <a href="#">contact</a>
+          <ButtonCall href="#">
+            contact
+          </ButtonCall>
         </div>
         <div>
           <Image
@@ -72,6 +74,34 @@ function Home() {
           />
         </div>
       </SectionService>
+
+      <SectionAboutUs>
+        <div>
+          {/* <Image
+            src="/images/pexels-vecislavas-popa.png"
+            alt="Interior Design in the house"
+            layout="fill"
+          /> */}
+        </div>
+        <div>
+          <h2>About Us</h2>
+          <h3>Interioris The Will of An Epoch Mextreo</h3>
+          <p>
+            There are many variations of passages of Lorem Ipsum available,
+            but the majority have suffered alteration in some form injected
+            humour, or randomised words which don't look even slightly
+            believable.If you are going to use a passage of Lorem Ipsum,
+            sure there isn't anything embarrassing hidden the middleof text.
+            All the Lorem Ipsum generators on the Internettend to repeat
+            predefined chunks as necessary,making this the first true
+            generator on the Internet.
+          </p>
+
+          <ButtonCall href="#">
+            Learn More
+          </ButtonCall>
+        </div>
+      </SectionAboutUs>
     </>
   );
 }
