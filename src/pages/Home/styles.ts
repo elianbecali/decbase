@@ -174,5 +174,63 @@ export const SectionService = styled.section`
 `;
 
 export const SectionAboutUs = styled.section`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 6.688rem 16rem;
+  padding-top: 0;
+
+  >:first-child {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: '';
+      bottom: 10%;
+      right: 4%;
+      height: 99%;
+      width: 100%;
+      max-height: 681px;
+      max-width: 743px;
+      border: 2px solid var(--limed-oak);
+      border-radius: 8.75rem 0;
+      z-index: -1;
+    }
+  }
+
+  div img {
+    border-radius: 8.75rem 0;
+  }
+
+  > div + div {
+    max-width: 544px;
+
+    h2, h3 {
+      font-family: 'Poppins';
+      font-weight: 500;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      line-height: 1.875rem;
+      color: var(--dove-gray);
+    }
+
+    h3 {
+      font-size: 3rem;
+      line-height: 3.563rem;
+      color: var(--mine-shaft);
+      margin-bottom: 1.375rem;
+      margin-top: 0.375rem;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 1.125rem;
+      line-height: 1.875rem;
+      color: var(--dove-gray);
+      margin-bottom: 1.75rem;
+    }
+  }
+
 `;

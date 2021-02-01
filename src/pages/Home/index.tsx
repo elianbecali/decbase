@@ -77,11 +77,12 @@ function Home() {
 
       <SectionAboutUs>
         <div>
-          {/* <Image
+          <Image
             src="/images/pexels-vecislavas-popa.png"
             alt="Interior Design in the house"
-            layout="fill"
-          /> */}
+            width="681"
+            height="726"
+          />
         </div>
         <div>
           <h2>About Us</h2>
