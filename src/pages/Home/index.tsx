@@ -6,14 +6,14 @@ import CardService from '../../components/CardService';
 
 import Menu from  '../../components/Menu';
 
-import { ButtonCall, HeaderPage, SectionAboutUs, SectionService } from './styles';
+import * as S from './styles';
 
 function Home() {
   return (
     <>
       <Menu />
 
-      <HeaderPage>
+      <S.HeaderPage>
         <div className="content">
           <h1>Modern Interior</h1>
           <h2>Create Your Interior Design.</h2>
@@ -21,9 +21,9 @@ function Home() {
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
             veniam, quis nostrud exercitation.
           </p>
-          <ButtonCall href="#">
+          <S.ButtonCall href="#">
             contact
-          </ButtonCall>
+          </S.ButtonCall>
         </div>
         <div>
           <Image
@@ -32,9 +32,9 @@ function Home() {
             layout="fill"
           />
         </div>
-      </HeaderPage>
+      </S.HeaderPage>
 
-      <SectionService>
+      <S.SectionService>
         <div>
           <h2>What we do <span>Our Service</span></h2>
 
@@ -73,9 +73,9 @@ function Home() {
             isHighlight={false}
           />
         </div>
-      </SectionService>
+      </S.SectionService>
 
-      <SectionAboutUs>
+      <S.SectionAboutUs>
         <div>
           <Image
             src="/images/pexels-vecislavas-popa.png"
@@ -98,11 +98,29 @@ function Home() {
             generator on the Internet.
           </p>
 
-          <ButtonCall href="#">
+          <S.ButtonCall href="#">
             Learn More
-          </ButtonCall>
+          </S.ButtonCall>
         </div>
-      </SectionAboutUs>
+      </S.SectionAboutUs>
+
+      <S.SectionCompany>
+        <div>
+          <p>
+            <span>
+              <img src="/images/20.svg" alt="20" />
+            </span>
+            Years Of Successful <br />
+            Working <br />
+            The Market
+          </p>
+          <S.ButtonCall href="#">Read More</S.ButtonCall>
+        </div>
+
+        <div>
+          <Image src="/images/pexels-lisa-fotios.png" width="682" height="726" alt="Light on"/>
+        </div>
+      </S.SectionCompany>
     </>
   );
 }

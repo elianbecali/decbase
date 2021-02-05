@@ -234,3 +234,55 @@ export const SectionAboutUs = styled.section`
   }
 
 `;
+
+export const SectionCompany = styled.div`
+  display: flex;
+  justify-content: space-between;
+
+  padding: 6.688rem 16rem;
+  align-items: center;
+
+  >div p {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 3.125rem;
+    letter-spacing: 0.04rem;
+    line-height: 4.063rem;
+    color: var(--mine-shaft);
+
+    margin-bottom: 2.3rem;
+    padding-right: 2rem;
+
+    span {
+      display: block;
+      font-weight: 700;
+      font-size: 18rem;
+      line-height: 1.75rem;
+      letter-spacing: -0.01rem;
+
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  div + div {
+    position: relative;
+
+    img,
+    &::after {
+      border-radius: 8.75rem 0;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      bottom: -3%;
+      right: -3.5%;
+      height: 99%;
+      width: 100%;
+      max-height: 681px;
+      max-width: 743px;
+      border: 2px solid var(--limed-oak);
+      z-index: -1;
+    }
+  }
+`;
