@@ -286,3 +286,55 @@ export const SectionCompany = styled.div`
     }
   }
 `;
+
+export const SectionWorkSuccess = styled.div`
+  padding: 6.688rem 16rem;
+  background-color: var(--alabaster);
+
+  p {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 3.75rem;
+
+  color: var(--mine-shaft);
+
+  max-width: 823px;
+  padding-bottom: 4rem;
+  margin: 0 auto;
+  }
+
+  >div {
+    display: flex;
+    justify-content: space-between;
+
+
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      width: 11.563rem;
+      height: 11.563rem;
+
+      background-color: var(--white);
+      box-shadow: 0px 13px 16px rgba(0, 0, 0, 0.1);
+      border-radius: 2.5rem 0;
+
+      font-weight: 700;
+      font-size: 3.125rem;
+      line-height: 3.75rem;
+
+      span {
+        font-size: 1.125rem;
+        line-height: 1.875rem;
+        color: var(--mine-shaft);
+      }
+    }
+
+    div:nth-child(2n) {
+      transform: translateY(50%);
+    }
+  }
+`;

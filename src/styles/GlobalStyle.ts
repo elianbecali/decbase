@@ -3,6 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 export default createGlobalStyle`
   :root {
     --white: #FFFFFF;
+    --alabaster: #F8F8F8;
     --black: #000000;
     --mine-shaft: #212121;
     --dove-gray: #646464;

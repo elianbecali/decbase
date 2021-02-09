@@ -121,6 +121,33 @@ function Home() {
           <Image src="/images/pexels-lisa-fotios.png" width="682" height="726" alt="Light on"/>
         </div>
       </S.SectionCompany>
+
+      <S.SectionWorkSuccess>
+        <p>
+          3000+ Completed Work Which WE have Successfully Done
+        </p>
+        <div>
+          <div>
+            980
+            <span>Project</span>
+          </div>
+
+          <div>
+            520
+            <span>Happy Client</span>
+          </div>
+
+          <div>
+            330
+            <span>Winners</span>
+          </div>
+
+          <div>
+            120
+            <span>Recoment</span>
+          </div>
+        </div>
+      </S.SectionWorkSuccess>
     </>
   );
 }
