@@ -289,6 +289,7 @@ export const SectionCompany = styled.div`
 
 export const SectionWorkSuccess = styled.div`
   padding: 6.688rem 16rem;
+  padding-bottom: calc(6.688rem + 92.5px);
   background-color: var(--alabaster);
 
   p {
@@ -335,6 +336,118 @@ export const SectionWorkSuccess = styled.div`
 
     div:nth-child(2n) {
       transform: translateY(50%);
+    }
+  }
+`;
+
+export const SectionTestimonials = styled.div`
+  padding: 6.688rem 16rem;
+
+  >div {
+    text-align: center;
+
+    h2, h3 {
+      font-family: 'Poppins';
+      font-weight: 500;
+      font-size: 1.25rem;
+      line-height: 4.5rem;
+      color: var(--dove-gray);
+    }
+    h3 {
+      font-size: 3rem;
+      line-height: 1.875rem;
+      color: var(--mine-shaft);
+    }
+  }
+
+  div.icons {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  div.icons span + span {
+    margin-left: 1.125rem;
+  }
+
+  div.icons span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 0.9rem;
+    box-shadow: -1px 3px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+
+    &.marker {
+      background-color: var(--viridian);
+    }
+  }
+
+  div.testimonials {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 6rem;
+  }
+
+  div.card {
+    display: flex;
+    padding: 2.375rem;
+    max-width: 570px;
+    cursor: pointer;
+    transition: transform 0.25s;
+    box-shadow: 7px 7px 30px 5px rgba(66, 96, 84, 0.15);
+    border-radius: 4.375rem 0;
+
+    &:hover {
+      transform: scale(1.04);
+    }
+
+    & div:first-child {
+      margin-left: -19.9%;
+      /* transform: translateX(-65%); */
+      img {
+        border-radius: 2.188rem 0;
+      }
+    }
+
+    div + div {
+      position: relative;
+      margin-left: 1.875rem;
+      text-align: start;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: -8px;
+        right: 0;
+
+        width: 33px;
+        height: 32px;
+        background: url('/images/quotation-marks.svg');
+      }
+    }
+
+    div p:first-child {
+      font-weight: 700;
+      font-size: 1.5rem;
+      line-height: 2rem;
+      color: var(--mine-shaft);
+
+      span {
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.313rem;
+      }
+    }
+
+    div p + p {
+      margin-top: 0.5rem;
+      font-weight: 400;
+      font-size: 1.125rem;
+      line-height: 1.75rem;
+      color: var(--dove-gray);
     }
   }
 `;

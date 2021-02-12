@@ -148,6 +148,55 @@ function Home() {
           </div>
         </div>
       </S.SectionWorkSuccess>
+
+      <S.SectionTestimonials>
+        <div>
+          <h2>Testimonials</h2>
+          <h3>Client says about us</h3>
+        </div>
+        <div className="icons">
+          <span>
+            <MdKeyboardArrowLeft size={20} color="#646464" />
+          </span>
+          <span className="marker">
+            <MdKeyboardArrowRight size={20} color="#FFF" />
+          </span>
+        </div>
+
+        <div className="testimonials">
+          <div className="card">
+            <div>
+              <img src="/images/louis.png" alt="Profile Louis Saville"/>
+            </div>
+
+            <div>
+              <p>Louis Saville <span>/CEO at Google inc</span></p>
+
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+
+          <div className="card">
+            <div>
+              <img src="/images/rekha.png" alt="Profile Rekha Varadwaz"/>
+            </div>
+
+            <div>
+              <p>Rekha Varadwaz <span>/Manager at Nike inc</span></p>
+
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+        </div>
+      </S.SectionTestimonials>
     </>
   );
 }
