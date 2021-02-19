@@ -451,3 +451,61 @@ export const SectionTestimonials = styled.div`
     }
   }
 `;
+
+export const SectionLatestNews = styled.section`
+  padding: 6.688rem 16rem;
+  background-color: var(--alabaster);
+
+  >div:nth-child(1) {
+    text-align: center;
+
+    h2, p {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      line-height: 1.75rem;
+    }
+    h2 {
+      font-size: 1.25rem;
+      color: var(--dove-gray);
+      text-transform: uppercase;
+    }
+    p {
+      font-size: 3rem;
+      color: var(--mine-shaft);
+      margin-top: 1.5rem;
+    }
+  }
+
+  >div + div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5.125rem;
+
+    article {
+      max-width: 600px;
+
+      div img{
+          border-radius: 6rem 0;
+      }
+
+      div + div {
+        margin-top: 2.625rem;
+
+        h3 {
+          font-weight: 600;
+          font-size: 1.8rem;
+          line-height: 1.75rem;
+          color: var(--mine-shaft);
+        }
+
+        p {
+          margin-top: 1rem;
+          margin-bottom: 2.813rem;
+          font-size: 1.125rem;
+          line-height: 1.75rem;
+          color: var(--dove-gray);
+        }
+      }
+    }
+  }
+`;

@@ -197,6 +197,44 @@ function Home() {
           </div>
         </div>
       </S.SectionTestimonials>
+
+      <S.SectionLatestNews>
+        <div>
+          <h2>Latest News</h2>
+          <p>From Our Blog</p>
+        </div>
+        <div>
+          <article>
+            <div>
+              <Image src="/images/img-01.png" width="600" height="480" />
+            </div>
+
+            <div>
+              <h3>2020 Interior Design Trends</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                incididunt ut labore et dolore magna aliqua.
+              </p>
+
+              <S.ButtonCall href="#">Continue Reading...</S.ButtonCall>
+            </div>
+          </article>
+
+          <article>
+            <div>
+              <Image src="/images/img-02.png" width="600" height="480" />
+            </div>
+
+            <div>
+              <h3>2020 Interior Design Trends</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                incididunt ut labore et dolore magna aliqua.
+              </p>
+
+              <S.ButtonCall href="#">Continue Reading...</S.ButtonCall>
+            </div>
+          </article>
+        </div>
+      </S.SectionLatestNews>
     </>
   );
 }
