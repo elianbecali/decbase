@@ -509,3 +509,74 @@ export const SectionLatestNews = styled.section`
     }
   }
 `;
+
+export const SectionSignUp = styled.section`
+  padding: 6.688rem 16rem;
+  text-align: center;
+
+  div h3 {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 1.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--mine-shaft);
+  }
+  div span {
+    display: inline-block;
+    margin: 2.5rem 0;
+    width: 100%;
+    max-width: 460px;
+    border-top: 1px solid var(--silver);
+  }
+  div p {
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: var(--dove-gray);
+    line-height: 1.75rem;
+    max-width: 647px;
+    margin: 0 auto;
+  }
+  div form {
+    margin: 0 auto;
+    margin-top: 1.875rem;
+    max-width: 772px;
+    max-height: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+
+    input[type=email] {
+      padding: 0.8rem 1.75rem;
+      width: 100%;
+      height: 50px;
+      max-width: 590px;
+      border: none;
+      border-radius: 1.25rem 0 0 0;
+      background: var(--gallery);
+
+      font-family: 'Raleway', sans-serif;
+      font-weight: 500;
+      font-size: 1.125rem;
+      color: var(--dove-gray);
+    }
+
+    button {
+      font-weight: 700;
+      font-size: 1.125rem;
+      text-align: center;
+      text-transform: uppercase;
+
+      height: 100%;
+      max-height: 50px;
+      max-width: 140px;
+      padding: 0.8rem 1.75rem;
+      border: none;
+      border-radius: 0 0 1.25rem 0;
+      color: var(--white);
+      cursor: pointer;
+      background-color: var(--viridian);
+    }
+  }
+`;

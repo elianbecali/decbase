@@ -8,8 +8,10 @@ export default createGlobalStyle`
     --mine-shaft: #212121;
     --dove-gray: #646464;
     --eunry: #CAA892;
+    --silver: #C4C4C4;
     --viridian: #37806B;
     --limed-oak: #B0855B;
+    --gallery: #EEEEEE;
   }
 
   * {

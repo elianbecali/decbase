@@ -235,6 +235,22 @@ function Home() {
           </article>
         </div>
       </S.SectionLatestNews>
+
+      <S.SectionSignUp>
+        <div>
+          <h3>Don't Forget to sign up</h3>
+          <span></span>
+          <p>Find out early about all upcoming promotions and new
+            product releases with our newsletter.
+          </p>
+        </div>
+        <div>
+          <form>
+            <input type="email" placeholder="Enter your email address....." />
+            <button>subscribe</button>
+          </form>
+        </div>
+      </S.SectionSignUp>
     </>
   );
 }
