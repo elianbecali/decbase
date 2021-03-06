@@ -4,7 +4,7 @@ import { BsCardChecklist, BsHouseDoor } from 'react-icons/bs';
 import { AiOutlineHome } from 'react-icons/ai';
 import CardService from '../../components/CardService';
 
-import Menu from  '../../components/Menu';
+import Menu from  '../../components/Menu'
 
 import * as S from './styles';
 
