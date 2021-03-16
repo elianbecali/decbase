@@ -251,6 +251,94 @@ function Home() {
           </form>
         </div>
       </S.SectionSignUp>
+
+      <S.SectionFooter>
+        <div className="container">
+          <div className="brand">
+            <img src="images/logo.svg" alt="Logo decbase" />
+            <p>But i must explain to you all this mistaken
+              idea of dencouncing pleasure.
+            </p>
+          </div>
+          <div>
+            <p>Quick Links</p>
+
+            <ul>
+              <li>
+                <a href="#">About Our Company</a>
+              </li>
+              <li>
+                <a href="#">Services WE provide</a>
+              </li>
+              <li>
+                <a href="#">Career & Opportunity</a>
+              </li>
+              <li>
+                <a href="#">Privacy & policy</a>
+              </li>
+              <li>
+                <a href="#">Contact US</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p>Company</p>
+
+            <ul>
+              <li><a href="#">About Company</a></li>
+              <li><a href="#">Our Testimonials</a></li>
+              <li><a href="#">Latest News</a></li>
+              <li><a href="#">Our misson</a></li>
+              <li><a href="#">Get a free Quot</a></li>
+            </ul>
+          </div>
+          <div>
+            <p>Contact us</p>
+
+            <address>
+              <p>
+                Sagrada Familia, Herba <br />
+                Street Front USA <br />
+                <a href="mailto:brandoxide@gmail.com" >brandoxide@gmail.com</a> <br />
+                002-568423591
+              </p>
+            </address>
+          </div>
+          <div className="social">
+            <p>Follow Us</p>
+
+
+            <ul>
+              <li>
+                <a href="#">
+                  <img src="icon-facebook.svg" alt="Icon Facebook"/>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="icon-twitter.svg" alt="Icon Twitter"/>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="icon-instagram.svg" alt="Icon Instagram"/>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="icon-linkedin.svg" alt="Icon LinkedIn"/>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className="copyright">
+          <p>
+          Copyright @ 2020 <span>Brandoxide</span>.all right reserved.
+          </p>
+        </div>
+      </S.SectionFooter>
+
     </>
   );
 }

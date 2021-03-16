@@ -12,6 +12,7 @@ export default createGlobalStyle`
     --viridian: #37806B;
     --limed-oak: #B0855B;
     --gallery: #EEEEEE;
+    --alto: #D5D5D5;
   }
 
   * {
@@ -24,5 +25,9 @@ export default createGlobalStyle`
 
   a {
     text-decoration: none;
+  }
+
+  ul {
+    list-style: none;
   }
 `;
