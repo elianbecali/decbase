@@ -6,7 +6,7 @@ import CardService from '../../components/CardService';
 
 import Menu from  '../../components/Menu'
 
-import * as S from './styles';
+import * as S from '../../styles/Home';
 
 function Home() {
   return (
