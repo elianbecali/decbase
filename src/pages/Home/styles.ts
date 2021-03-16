@@ -93,6 +93,12 @@ export const ButtonCall = styled.a`
   border-radius: 1.25rem 0;
   color: var(--white);
   background-color: var(--viridian);
+
+  transition: transform 0.3s ease-out;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 `;
 
 export const SectionService = styled.section`
@@ -334,8 +340,20 @@ export const SectionWorkSuccess = styled.div`
       }
     }
 
+    >div {
+      transition: transform 0.3s ease-out;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
     div:nth-child(2n) {
       transform: translateY(50%);
+      transition: transform 0.3s ease-out;
+
+      &:hover {
+        transform: translateY(50%) scale(1.1);
+      }
     }
   }
 `;
