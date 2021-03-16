@@ -13,6 +13,12 @@ export const Article = styled.article<ArticleProps>`
   border-radius: 3.75rem 0;
   box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.14);
 
+  transition: transform 0.3s ease-in;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
   > div svg{
     margin-top: 0.6rem;
     margin-right: 0.8rem;
